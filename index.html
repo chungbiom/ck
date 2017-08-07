@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>CK Generate</title>
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="form">
+
+    <ul class="tab-group">
+      <li class="tab active"><a href="#keygen">Key Gen</a></li>
+      <li class="tab"><a href="#support">Support</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="keygen">
+        <h1>Welcome Back!</h1>
+
+        <form>
+
+          <div class="field-wrap">
+            <label>
+              License Name<span class="req">*</span>
+            </label>
+            <input type="text" id="licenseName" autocomplete="off" />
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              License Key
+            </label>
+            <input type="text" id="licenseKey" onClick="this.select()" readonly />
+          </div>
+
+          <button class="button button-block" id="generateBtn" />Generate</button>
+
+        </form>
+
+      </div>
+
+      <div id="support">
+        <h1>Support for Use</h1>
+
+        <form>
+
+          <p class="forgot"><a href="#">1. Input the License Name</a></p>
+
+          <div class="field-wrap">
+            <label>
+              License Name<span class="req">*</span>
+            </label>
+            <input type="text" disabled />
+          </div>
+
+          <p class="forgot"><a href="#">2. Click Generate</a></p>
+
+          <button class="button button-block" />Generate</button>
+
+        </form>
+
+      </div>
+
+    </div>
+    <!-- tab-content -->
+
+  </div>
+  <!-- /form -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
